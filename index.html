@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Islamic Prayer Time App</title>
+
+</head>
+
+<body>
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- logo -->
+        <a href="#" class="menu-logo">
+            <img src="images/logo.png" alt="logo" />
+        </a>
+
+        <!-- menu items -->
+        <div class="menu">
+            <ul>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Features
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+
+        <div class="form">
+            <form onsubmit="getData(); return false">
+                <input type="text" placeholder="Enter city name" id="city">
+            </form>
+        </div>
+
+        <div class="main">
+            <div id="fajr" class="Prayers">
+                <p>Fajr (فجر)</p>
+                <p id="fajr-time" class="times"></p>
+            </div>
+            <div id="sunrise" class="Prayers">
+                <p>Sunrise (شروق)</p>
+                <p id="sunrise-time" class="times"></p>
+            </div>
+            <div id="zuhr" class="Prayers">
+                <p>Zhuhr (ظهر)</p>
+                <p id="zuhr-time" class="times"></p>
+            </div>
+            <div id="asr" class="Prayers">
+                <p>Asr (عصر)</p>
+                <p id="asr-time" class="times"></p>
+            </div>
+            <div id="maghrib" class="Prayers">
+                <p>Maghrib (مغرب)</p>
+                <p id="maghrib-time" class="times"></p>
+            </div>
+            <div id="isha" class="Prayers">
+                <p>Isha (عشاء)</p>
+                <p id="isha-time" class="times"></p>
+            </div>
+        </div> <!-- end of main -->
+    </div> <!-- end of content -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
