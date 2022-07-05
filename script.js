@@ -3,7 +3,7 @@ function getData() {
     // get city name
     let input = document.getElementById('city').value;
 
-    axios.get(`http://api.aladhan.com/v1/timingsByCity?city=${input}&country=pakistan&method=1`)
+    axios.get(`https://api.aladhan.com/v1/timingsByCity?city=${input}&country=pakistan&method=1`)
         .then(function (response) {
             // handle success
             const data = response.data;
